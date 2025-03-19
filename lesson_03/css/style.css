@@ -1,0 +1,69 @@
+@import url('reset.css');
+h1{
+	color: rgb(13, 141, 23);
+}
+h2{
+	color: blue;
+}
+
+.head p {
+	color: darkcyan;
+}
+.content,
+.content * {
+	color: darkorchid;
+}
+
+
+.firstli{
+	color: #07458b;
+}
+.secondli{
+  color:  #0853aa; 
+}
+.thirdli{
+	color: #1169cf;
+}
+.fourli{
+	color: #3480d7;
+}
+.fifeli{
+	color: #4597f7;
+}
+.sixli{
+	color: #6ba4e4;
+}
+.sevenli {
+	color: #8ab7ea;
+}
+
+[title] { color: blue; }
+
+
+
+
+
+/* --------------------------------------- */
+.additional-task ul > li {
+	color: green;
+}
+.additional-task ul > li ~ li {
+	color: red;
+}
+
+.additional-task ul > li > ul > li {
+	color: blue;
+}
+.additional-task ul > li > ul > li ~ li {
+	color: orangered;
+}
+
+.additional-task ul > li > ul > li > ol > li {
+	color: #4597f7;
+}
+.additional-task ul > li > ul > li > ol > li ~ li {
+	color: #5d5d5d;
+}
+.additional-task span {
+	color: #a0f0fc;
+}

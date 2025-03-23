@@ -1,0 +1,82 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders:&display=swap");
+span{
+	color: rgba(250, 247, 247, 0);
+}
+
+h1{
+	font-size: 40px;
+	color: darkblue;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: 5px 5px 5px rgb(73, 73, 187);
+	text-transform: uppercase;
+	line-height: 2;
+	letter-spacing: 10px;
+}
+h2{
+	font-size: 24px;
+	font-weight: 600;
+	color: rgb(34, 34, 120);
+	text-transform: uppercase;
+	line-height: 1.5;
+	
+}
+header{
+	line-height: 2.5;
+}
+main{
+	word-spacing: 5px;
+}
+.first-content span{
+	color: black;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: crimson;
+
+}
+ h3{
+	font-size: 24px;
+	font-weight: 600;
+	color: rgb(40, 151, 15);
+	line-height: 1.5;
+}
+h4{
+	font-size: 24px;
+	font-weight: 600;
+	color: rgb(29, 123, 8);
+	text-transform: uppercase;
+	line-height: 2;
+	letter-spacing: 5px;
+	text-align: center;
+}
+.map a{
+	font-size: 16px;
+	line-height: 2;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: rgb(39, 89, 182);
+	text-decoration: overline;
+}
+.paragraph{
+	font-family: "Carme";
+	text-align: right;
+	text-transform: capitalize; 
+
+}
+.paragraph ~ p {
+	font-family: "KoPubBatang";
+	font-weight: 300;
+	color: forestgreen;
+	text-shadow: 5px 5px 5px rgb(73, 73, 187);
+}
+.paragraph + p{
+	
+	font-family: "Big Shoulders";
+	font-size: 18px;
+	line-height: 1.5;
+	color: darkslategray;
+	text-shadow: none;
+}

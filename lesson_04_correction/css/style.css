@@ -1,0 +1,20 @@
+
+@import url("fonts.css");
+
+@import url("reset.css");
+
+.task{
+	font-family: "Poppins", sans-serif;
+}
+h1{
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #1a1a1a;
+}
+.task p{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #808080;
+}

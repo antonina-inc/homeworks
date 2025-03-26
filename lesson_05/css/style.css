@@ -1,0 +1,133 @@
+
+@import url(../css/reset.css);
+@import url(../css/fonts.css);
+
+ 
+
+.bloc{
+    font-family: "Montserrat", sans-serif;
+    background-color: #231F8B;
+    padding: 20px 40px;
+}
+.top{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #5A54F2;
+    margin-bottom: 20px;
+}
+h1{
+    font-family: "CircularStd", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.top~ p {
+    font-family: "CircularStd", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+header{
+    margin-bottom: 40px;
+}
+
+.main-content div{
+    padding: 20px;
+    max-width: 200px;
+    min-height: 260px;
+    font-size: 0;
+    overflow: hidden;
+}
+h2{
+    font-family: "CircularStd", sans-serif;;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.main-content p{
+font-size: 14px;
+line-height: 1.5;
+
+}
+.line{
+    color: red;
+    font-weight: bold;
+}
+[class*="card"] *{
+    margin-bottom: 10px;
+}
+
+.card-1, .card-2, .card-4{
+    color: #737373;
+    background-color: #fff;
+   
+}
+
+.card-1, .card-2, .card-4 h2{
+    color: #252B42;
+}
+
+.card-3{
+    background-color: #5A54F2;
+  
+}
+.card-3 *{  
+    color: #fff;
+}
+
+[class*="card"]{
+    display: inline-block;
+vertical-align: top;
+margin-right: 28px;
+}
+.card-2, .card-4{
+    margin-top: 48px;
+    
+}
+/* ////////////////////////////////////////////////////////// */
+.homework{
+    font-family: "Tektur",sans-serif;
+    padding: 20px;
+}
+h3{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h3+p{
+    margin-left: 20px;
+    text-transform: capitalize;
+    line-height: 1.5;
+    text-decoration: dotted;
+    
+}
+.homework div {
+background-color: aquamarine;
+padding: 6px;
+height: 200px;
+overflow: auto;
+}
+
+ul {
+    display: inline-block;
+    font-size: 0;
+}
+li{
+    display: inline-block; 
+    vertical-align: top;
+    max-width: 100px;
+   margin: 20px;
+   font-size: 14px;
+   color: darkgreen;
+   text-shadow: 2px 2px 2px cadetblue;
+   overflow: hidden;
+}
+img{
+    margin-bottom: 10px;
+}
+
+

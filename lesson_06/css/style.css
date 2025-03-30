@@ -32,11 +32,6 @@
 	min-height: 20px;
 }
 
-.section_2 {
-	background-color: #302C42;
-	padding: 40px;
-	font-family: "Montserrat", sans-serif;
-}
 .bloc_1 {	
 	max-width: 1272px;
 	border-radius: 90px;
@@ -80,7 +75,12 @@ a{
 	font-weight: 400;
 }
 
-
+.section_2 {
+	font-family: "Montserrat", sans-serif;
+	background-color: #302C42;
+	padding: 40px;
+	min-height: 2000px;
+}
 .bloc_2 {
 	padding-left: -10px;
 	padding-right: -10px;
@@ -95,6 +95,7 @@ display: inline-block;
 vertical-align: top;
 color: #fff;
 }
+
 .text {
 	
 	font-size: 16px;
@@ -115,14 +116,18 @@ color: #fff;
 .title-2 img{
 	width: 120px;
 }
-.left-side > .text > .title + img {
+.left-side > .text > .title + img {	
 	border-radius: 200px 100px 200px 100px;
-	margin-top: 80px;
+	
 }
-
+.left-side .title{
+	margin-bottom: 120px;
+}
+.right-side .paragraph {
+	margin-bottom: 100px;
+}
 .right-side .title {
-	margin-top: 100px;
-	margin-bottom: 40px;
+		margin-bottom: 40px;
 }
 .button{
 	border-radius: 40px;
@@ -133,7 +138,4 @@ font-size: 12px;
 font-weight: bold;
 color: #343045;
 text-align: center;
-}
-.right-side .text > p {
-	margin-bottom: 60px;
 }

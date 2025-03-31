@@ -1,141 +1,125 @@
 
 @import url("fonts.css");
 
+
 @import url("reset.css");
+
 
 
 .wrapper {
 	overflow: clip;
 	min-height: 100%;
 }
-.container{
-	margin: 0 auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 20px;
+.page {
+max-width: 1440px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+background-color: #302C42;
 }
-.section_1 {
-	font-family: "Poppins", sans-serif;
-	font-size: 14px;
-	color: #808080;
-	line-height: 1.5;
-	max-width: 648px;
-	margin: 20px auto;
-	
-}
-.section_1 * {
-	margin-bottom: 10px;
-}
-.item {
-	background: url("../img/Check.png") no-repeat;
-	padding-left: 30px;
-	min-height: 20px;
+.bloc{
+margin: 0 10px;
+padding: 10px 0;
+font-size: 0;
+overflow: clip;
 }
 
-.bloc_1 {	
-	max-width: 1272px;
-	border-radius: 90px;
+.container-1 {
+	font-family: "Montserrat";
+padding: 30px;
+max-width: 1340px;
+min-height: 70px;
+border-radius: 90px;
+border: 1px solid #000;
 background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
 box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
-padding: 30px;	
-font-size: 0;
-margin-bottom: 20px;
+color: #fff;
+line-height: 1.5;
+margin-bottom: 40px;
 }
-.box {
-		padding-left: 20px;
+.box-1{
+	background: url("../img/Location-Icon.svg") 0 50% / auto 60px no-repeat;
+padding-left: 70px;
+
+}
+.box-2{
+	background: url("../img/tel-icon/phone-call.svg") 10% 50% / auto 60px no-repeat;
+	padding-left: 90px;
+	border-right: 2px solid #837e97;
+border-left: 2px solid #837e97;
+
+}
+.box-3{
+	background: url("../img/leter-icon/mail.svg") 10% 50% / auto 60px no-repeat;
+	padding-left: 90px;
+}
+h2 {font-size: 24px;
+	font-weight: 700;
+}
+a {
+	font-size: 14px;
+	font-weight: 400;
+}
+.box-1, .box-2, .box-3 {
 	width: 33.333%;
 	display: inline-block;
 	vertical-align: top;
-	color: white;
-}
-.content_1 {
-	background: url("../img/Location-Icon.svg") no-repeat;		
-	padding-left: 70px;
-	min-height: 85px;
-	border-right: 2px solid grey;
-}
-.content_2 {
-	background: url("../img/phone-call.svg") no-repeat;	
-	padding-left: 70px;
-	min-height: 85px;
-	border-right: 2px solid grey;
-}
-.content_3 {
-	background: url("../img/mail.svg") no-repeat;	
-	padding-left: 70px;
-	min-height: 85px;
-}
-a{
-	font-weight: bold;
-	font-size: 24px;	
-	margin-bottom: 10px;
-}
-.box p{
-	font-size: 14px;
-	font-weight: 400;
 }
 
-.section_2 {
-	font-family: "Montserrat", sans-serif;
-	background-color: #302C42;
-	padding: 40px;
-	min-height: 2000px;
-}
-.bloc_2 {
-	padding-left: -10px;
-	padding-right: -10px;
-	font-size: 0;
-}
 
-.left-side, .right-side {
-width: 50%;
-padding-right: 10px;
-padding-left: 10px;
-display: inline-block;
-vertical-align: top;
-color: #fff;
+.container-2 {
+	font-family: "Montserrat";
+	color: #fff;	
+	line-height: 1.2;
+		
 }
-
-.text {
-	
-	font-size: 16px;
-	font-weight: 400;
-}
-
-.title-1 {
+h3{
 	font-size: 36px;
-	font-weight: bold;
-	text-transform: uppercase;	
+	font-weight: 700;
+	text-transform: uppercase;
 }
-.title-2 {
+span {
 	font-size: 36px;
-	font-weight: 300px;
-	text-transform: uppercase;	
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.title>h3 img {
+	max-width: 150px;
+	padding-left: 20px;
 }
 
-.title-2 img{
-	width: 120px;
+.leftside .title {
+	margin-bottom: 80px;
 }
-.left-side > .text > .title + img {	
+.container-2 img {
+	max-width: 400px;
 	border-radius: 200px 100px 200px 100px;
 	
 }
-.left-side .title{
-	margin-bottom: 120px;
+.container-2 p {
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 60px;
+
 }
-.right-side .paragraph {
-	margin-bottom: 100px;
+.leftside, .rightside {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
 }
-.right-side .title {
-		margin-bottom: 40px;
+.rightside .title {
+	margin-bottom: 40px;
 }
-.button{
-	border-radius: 40px;
+.button {
+	font-size: 12px;
+	font-weight: 700;
+	color: #343045;
+	text-transform: uppercase;
+	max-width: 214px;
+min-height: 48px;
+border-radius: 40px;
 background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
-padding: 15px;
-max-width: 214px;
-font-size: 12px;
-font-weight: bold;
-color: #343045;
+padding: 20px;
 text-align: center;
+margin-bottom: 20px;
 }

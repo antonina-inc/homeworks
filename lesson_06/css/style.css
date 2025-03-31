@@ -63,14 +63,14 @@ padding-left: 70px;
 }
 .box-2{
 	background: url("../img/tel-icon/phone-call.svg") 10% 50% / auto 60px no-repeat;
-	padding-left: 90px;
+	padding-left: 100px;
 	border-right: 2px solid #837e97;
 border-left: 2px solid #837e97;
 
 }
 .box-3{
 	background: url("../img/leter-icon/mail.svg") 10% 50% / auto 60px no-repeat;
-	padding-left: 90px;
+	padding-left: 100px;
 }
 h2 {font-size: 24px;
 	font-weight: 700;

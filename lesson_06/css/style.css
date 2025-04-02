@@ -37,7 +37,11 @@ h1 {
 }
 
 .bloc{
+	
 	background-color: #302C42;
+	background-image: url("../img/Group\ 1.png");
+	background-position: center;
+	background-repeat: no-repeat;
 	max-width: 1440px;
 padding: 10px;
 font-size: 0;
@@ -63,14 +67,14 @@ padding-left: 70px;
 }
 .box-2{
 	background: url("../img/tel-icon/phone-call.svg") 10% 50% / auto 60px no-repeat;
-	padding-left: 100px;
+	padding-left: 90px;
 	border-right: 2px solid #837e97;
 border-left: 2px solid #837e97;
 
 }
 .box-3{
 	background: url("../img/leter-icon/mail.svg") 10% 50% / auto 60px no-repeat;
-	padding-left: 100px;
+	padding-left: 90px;
 }
 h2 {font-size: 24px;
 	font-weight: 700;

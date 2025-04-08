@@ -1,0 +1,87 @@
+
+@import url("fonts.css");
+
+
+@import url("reset.css");
+
+
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+	background-color: #333;
+	color: #fff;
+	
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+	background-color: mediumaquamarine;
+}
+.title {
+font-size: 38px;
+font-weight: bold;
+line-height: 1.2;
+text-transform: uppercase;
+text-align: center;
+text-shadow: 5px 5px 5px gray;
+max-width: 500px;
+overflow: hidden;
+border-radius: 20px;
+margin: 40px auto 40px;
+padding: 20px;
+box-shadow: 5px 5px 5px gray;
+}
+.list {
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 1.2;
+	max-width: 1200px;
+	overflow: hidden;
+	border-radius: 20px;
+	margin: 0 auto;
+	padding: 40px;
+	border: 1px solid gray;
+	box-shadow: 5px 5px 5px gray;	
+}
+h2 {
+	font-size: 34px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 5px gray;
+}
+p {
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+}
+p:hover {
+	color: blue;
+}
+
+.list * {
+	margin-bottom: 30px;
+}
+.list *:last-child {
+	margin-bottom: 0;
+}
+
+img {
+	max-width: 300px;
+	margin-right: 30px;
+}
+img:hover {
+	max-width: 305px;
+	box-shadow: 5px 5px 5px gray;
+	opacity: 0.5;
+}
+li:hover {
+	text-shadow: 5px 5px 5px gray;
+}
+.border {
+	border-radius: 27% 0 27% 0;
+}

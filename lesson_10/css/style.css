@@ -135,11 +135,21 @@ text-decoration-line: line-through;
 	content: "";
 	position: absolute;
 background-color: #fff;
-height: 80px;
-top: -40px;
+height: 40px;
+top: 0;
 left: 0;
 right: 0;
-border-radius: 50%;
+border-radius: 0% 0% 50% 50%/0% 0% 100% 100%;
+}
+.second-section__container::after {
+	content: "";
+	position: absolute;
+background-color: #231F8B;
+height: 40px;
+bottom: 0;
+left: 0;
+right: 0;
+border-radius: 50% 50% 0% 0% / 100% 100% 0% 0% ;
 }
 
 .second-section__information {

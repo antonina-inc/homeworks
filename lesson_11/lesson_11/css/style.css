@@ -324,7 +324,7 @@ transform: skew(-10deg) ;
 	box-shadow: -20px 0px 10px 10px yellow;
 	position: absolute;
 	top: 0;
-	right: 1;
+	right: 0;
 }
 .sun--positin {
 	position: absolute;

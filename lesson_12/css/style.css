@@ -280,10 +280,10 @@ body {
 		min-width: 300px;
 		min-height: 200px;
 animation-name: bicycle;
-animation-duration: 15s;
+animation-duration: 10s;
 animation-delay: 10s;
 animation-fill-mode: forwards;
-animation-timing-function: cubic-bezier(1.755, 0.05, 0.855, 0.06);
+animation-timing-function: linear;
 	}
 	
 	.bicycle__frame {
@@ -343,8 +343,8 @@ animation-timing-function: cubic-bezier(1.755, 0.05, 0.855, 0.06);
 		outline: 15px solid #000;
 		position: absolute;
 		animation-name: rotate;
-		animation-duration: 5s; 
-		animation-iteration-count: 3;
+		animation-duration: 2s; 
+		animation-iteration-count: 5;
 		animation-timing-function: linear;
 		animation-delay: 10s;
 	}

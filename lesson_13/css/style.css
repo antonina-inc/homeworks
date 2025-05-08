@@ -166,7 +166,6 @@ line-height: 1.2;
 .third-section__information {
     display: flex;  
     justify-content: space-between;
-	 row-gap: 141px;
 }
 .box-information__text {
 font-size: 15px;

@@ -166,10 +166,12 @@ line-height: 1.2;
 .third-section__information {
     display: flex;  
     justify-content: space-between;
+	 row-gap: 141px;
 }
 .box-information__text {
 font-size: 15px;
 line-height: 24px;
+text-align: center;
 }
 .box-information__text span {
     font-size: 24px;
@@ -177,6 +179,7 @@ line-height: 24px;
 }
 .box-information {
     display: flex;
-    gap: 14px;
+    gap: 10px;
+	 justify-content: center;
     align-items: center;
 }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header"></header>
+			<main class="page">
+				<div class="page__container">
+					<h1>home work 14</h1>
+					<div class="order">
+						<div class="order__container">
+							<div class="order__info info">
+								<div class="info__box">
+									<div class="info__billing-information">
+										<h2>Billing Information</h2>
+										<div class="personal-data">
+											<form class="personal-data__form" action="#">
+												<label class="personal-data__label">
+													<h4>First name</h4>
+													<input class="personal-data__input" name="data[]" type="text"
+														placeholder="Your first name" required>
+												</label>
+												<label class="personal-data__label">
+													<h4>Last name</h4>
+													<input class="personal-data__input" name="data[]" type="text"
+														placeholder="Your last name" required>
+												</label>
+												<label class="personal-data__label">
+													<h4>Company Name <span>(optional)</span></h4>
+													<input class="personal-data__input" name="data[]" type="text"
+														placeholder="Company name">
+												</label>
+											</form>
+										</div>
+										<div class="address">
+											<form class="address__form" action="#">
+												<label class="address__label">
+													<h4>Street Address</h4>
+													<input class="address__input" name="data[]" type="text"
+														placeholder="Street Address">
+												</label>
+												<label class="address__label">
+													<h4>Country / Region</h4>
+													<select name="form[]" class="address__select" name="data[]"
+														type="text"
+														placeholder="Street Address">
+														<option value="Region 1">Select</option>
+													</select>
+												</label>
+												<label class="address__label">
+													<h4>States</h4>
+													<select name="form[]" class="address__select" name="data[]"
+														type="text"
+														placeholder="Street Address">
+														<option value="Region 1">Select</option>
+													</select>
+												</label>
+												<label class="personal-data__label">
+													<h4>Zip Code</h4>
+													<input class="personal-data__input" name="data[]" type="text"
+														placeholder="Zip Code">
+												</label>
+											</form>
+										</div>
+										<div class="contacts">
+											<form class="contacts__form" action="#">
+												<label class="contacts__label">
+													<h4>Email</h4>
+													<input class="contacts__input" name="data[]" type="email"
+														placeholder="Email Address">
+												</label>
+												<label class="contacts__label">
+													<h4>Phone</h4>
+													<input class="contacts__input" name="data[]" type="tel"
+														placeholder="Phone number">
+												</label>
+												<label class="contacts__label contacts__label--input">
+													<input class="contacts__input" name="data[]" type="checkbox">
+													<p>Ship to a different address</p>
+												</label>
+											</form>
+										</div>
+									</div>
+									<div class="info__additional-info info--add">
+										<h2>Additional Info</h2>
+										<form class="info--add__form" action="#">
+											<label class="info--add__label">
+												<h4>Order Notes (Optional)</h4>
+												<textarea class="info--add__textarea" name="form[]"
+													placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+											</label>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="order__summery">
+								<h3>Order Summery</h3>
+								<div class="item-summery">
+									<div class="item-summery__product">
+										<div class="item-summery__img">
+											<img src="img/green-pepper.jpg" alt="green-pepper">
+										</div>
+										<p class="item-summry__name">Green Capsicum</p>
+										<p class="item-summery__number">x5</p>
+									</div>
+									<p class="item-summery__price">$70.00</p>
+								</div>
+								<div class="item-summery">
+									<div class="item-summery__product">
+										<div class="item-summery__img">
+											<img src="img/red-pepper.jpg" alt="red-pepper">
+										</div>
+										<p class="item-summery__name">Red Capsicum</p>
+										<p class="item-summery__number">x1</p>
+									</div>
+									<p class="item-summery__price">$14.00</p>
+								</div>
+								<div class="item-summery item-summery-bottom-line">
+									<p class="item-summery__result">Subtotal:</p>
+									<p class="item-summery__price">$84.00</p>
+								</div>
+								<div class="item-summery item-summery-bottom-line">
+									<p class="item-summery__result">Shipping:</p>
+									<p class="item-summery__price">Free</p>
+								</div>
+								<div class="item-summery">
+									<p class="item-summery__result item-summery__result--biger">Total:</p>
+									<p class="item-summery__price item-summery__price--biger">$84.00</p>
+								</div>
+								<div class="item-summery payment">
+									<form class="radio" action="#">
+										<input name="radio-item" id="item-1" value="Cash on Delivery"
+											class="radio__input"
+											type="radio">
+										<label for="item-1" class="radio__label">Cash on Delivery</label>
+
+										<input name="radio-item" id="item-2" value="Paypal"
+											class="radio__input"
+											type="radio">
+										<label for="item-2" class="radio__label">Paypal</label>
+
+										<input name="radio-item" id="item-3" value="Amazon Pay"
+											class="radio__input"
+											type="radio">
+										<label for="item-3" class="radio__label">Amazon Pay</label>
+									</form>
+
+								</div>
+								<div class="item-summery button-order">
+									<button type="submit" class="button-order__buton">Place
+										Order</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">footer</footer>
+		</div>
+
+	</body>
+</html>

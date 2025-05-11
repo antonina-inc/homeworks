@@ -26,17 +26,17 @@
 										<div class="personal-data">
 											<form class="personal-data__form" action="#">
 												<label class="personal-data__label">
-													<h4>First name</h4>
+													<p>First name</p>
 													<input class="personal-data__input" name="data[]" type="text"
 														placeholder="Your first name" required>
 												</label>
 												<label class="personal-data__label">
-													<h4>Last name</h4>
+													<p>Last name</p>
 													<input class="personal-data__input" name="data[]" type="text"
 														placeholder="Your last name" required>
 												</label>
 												<label class="personal-data__label">
-													<h4>Company Name <span>(optional)</span></h4>
+													<p>Company Name <span>(optional)</span></p>
 													<input class="personal-data__input" name="data[]" type="text"
 														placeholder="Company name">
 												</label>
@@ -45,28 +45,33 @@
 										<div class="address">
 											<form class="address__form" action="#">
 												<label class="address__label">
-													<h4>Street Address</h4>
-													<input class="address__input" name="data[]" type="text"
+													<p>Street Address</p>
+													<input class="address__input" type="text" name="data[]"
 														placeholder="Street Address">
 												</label>
 												<label class="address__label">
-													<h4>Country / Region</h4>
-													<select name="form[]" class="address__select" name="data[]"
-														type="text"
+													<p>Country / Region</p>
+													<select name="data[]" class="address__select" type="text"
 														placeholder="Street Address">
-														<option value="Region 1">Select</option>
+														<option value="Select">Select</option>
+														<option value="Region 1">Region 1</option>
+														<option value="Region 2">Region 2</option>
+														<option value="Region 3">Region 3</option>
 													</select>
 												</label>
 												<label class="address__label">
-													<h4>States</h4>
-													<select name="form[]" class="address__select" name="data[]"
+													<p>States</p>
+													<select name="data[]" class="address__select"
 														type="text"
 														placeholder="Street Address">
-														<option value="Region 1">Select</option>
+														<option value="State-1">Select</option>
+														<option value="State-2">State 1</option>
+														<option value="State-3">State 2</option>
+														<option value="State-4">State 3</option>
 													</select>
 												</label>
 												<label class="personal-data__label">
-													<h4>Zip Code</h4>
+													<p>Zip Code</p>
 													<input class="personal-data__input" name="data[]" type="text"
 														placeholder="Zip Code">
 												</label>
@@ -75,12 +80,12 @@
 										<div class="contacts">
 											<form class="contacts__form" action="#">
 												<label class="contacts__label">
-													<h4>Email</h4>
+													<p>Email</p>
 													<input class="contacts__input" name="data[]" type="email"
 														placeholder="Email Address">
 												</label>
 												<label class="contacts__label">
-													<h4>Phone</h4>
+													<p>Phone</p>
 													<input class="contacts__input" name="data[]" type="tel"
 														placeholder="Phone number">
 												</label>

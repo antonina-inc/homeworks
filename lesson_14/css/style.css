@@ -59,13 +59,13 @@ line-height: 1.5;
 color: #1A1A1A;
 margin-bottom: 20px;
 }
-h4 {
+.personal-data p {
 	font-size: 14px;
 	line-height: 1.5;
 	color: #1A1A1A;
 	margin-bottom: 8px;
 }
-h4 span {
+.personal-data span {
 	color: #808080;
 }
 .personal-data__form {

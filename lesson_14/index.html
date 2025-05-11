@@ -26,52 +26,49 @@
 										<div class="personal-data">
 											<form class="personal-data__form" action="#">
 												<label class="personal-data__label">
-													<p>First name</p>
-													<input class="personal-data__input" name="data[]" type="text"
-														placeholder="Your first name" required>
+													<span>First name</span>
+													<input class="personal-data__input" name="data[]"
+														placeholder="Your first name" required type="text">
 												</label>
 												<label class="personal-data__label">
-													<p>Last name</p>
-													<input class="personal-data__input" name="data[]" type="text"
-														placeholder="Your last name" required>
+													<span>Last name</span>
+													<input class="personal-data__input" name="data[]"
+														placeholder="Your last name" required type="text">
 												</label>
 												<label class="personal-data__label">
-													<p>Company Name <span>(optional)</span></p>
-													<input class="personal-data__input" name="data[]" type="text"
-														placeholder="Company name">
+													<span>Company Name <span>(optional)</span></span>
+													<input class="personal-data__input" name="data[]"
+														placeholder="Company name" type="text">
 												</label>
 											</form>
 										</div>
 										<div class="address">
 											<form class="address__form" action="#">
 												<label class="address__label">
-													<p>Street Address</p>
+													<span>Street Address</span>
 													<input class="address__input" type="text" name="data[]"
 														placeholder="Street Address">
 												</label>
 												<label class="address__label">
-													<p>Country / Region</p>
-													<select name="data[]" class="address__select" type="text"
-														placeholder="Street Address">
-														<option value="Select">Select</option>
+													<span>Country / Region</span>
+													<select name="data[]" class="address__select">
+														<option value="Select" selected>Select</option>
 														<option value="Region 1">Region 1</option>
 														<option value="Region 2">Region 2</option>
 														<option value="Region 3">Region 3</option>
 													</select>
 												</label>
 												<label class="address__label">
-													<p>States</p>
-													<select name="data[]" class="address__select"
-														type="text"
-														placeholder="Street Address">
-														<option value="State-1">Select</option>
+													<span>States</span>
+													<select name="data[]" class="address__select">
+														<option value="State-1" selected>Select</option>
 														<option value="State-2">State 1</option>
 														<option value="State-3">State 2</option>
 														<option value="State-4">State 3</option>
 													</select>
 												</label>
 												<label class="personal-data__label">
-													<p>Zip Code</p>
+													<span>Zip Code</span>
 													<input class="personal-data__input" name="data[]" type="text"
 														placeholder="Zip Code">
 												</label>
@@ -80,18 +77,18 @@
 										<div class="contacts">
 											<form class="contacts__form" action="#">
 												<label class="contacts__label">
-													<p>Email</p>
+													<span>Email</span>
 													<input class="contacts__input" name="data[]" type="email"
 														placeholder="Email Address">
 												</label>
 												<label class="contacts__label">
-													<p>Phone</p>
+													<span>Phone</span>
 													<input class="contacts__input" name="data[]" type="tel"
 														placeholder="Phone number">
 												</label>
 												<label class="contacts__label contacts__label--input">
 													<input class="contacts__input" name="data[]" type="checkbox">
-													<p>Ship to a different address</p>
+													<span>Ship to a different address</span>
 												</label>
 											</form>
 										</div>
@@ -100,7 +97,7 @@
 										<h2>Additional Info</h2>
 										<form class="info--add__form" action="#">
 											<label class="info--add__label">
-												<h4>Order Notes (Optional)</h4>
+												<span>Order Notes (Optional)</span>
 												<textarea class="info--add__textarea" name="form[]"
 													placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
 											</label>

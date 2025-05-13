@@ -65,14 +65,20 @@ margin-bottom: 20px;
 	color: #1A1A1A;
 	margin-bottom: 8px;
 }
-.personal-data span {
+ span {
+	display: inline-block;
+	margin-bottom: 8px;
+}
+.personal-data span span {	
 	color: #808080;
+	display: inline;
 }
 .personal-data__form {
 display: flex;
 	justify-content: space-between;
 	gap: 16px;
 	margin-bottom: 16px;
+	/* align-items: flex-c; */
 }
 .personal-data__label {
 	flex-basis: 280px;

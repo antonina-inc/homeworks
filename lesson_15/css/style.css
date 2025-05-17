@@ -263,28 +263,19 @@ text-transform: uppercase;
 .latest-news__description {
 	padding: 24px;
 	display: flex;
-	flex-direction: column;
-	gap: 20px;
-justify-content: space-between;
-flex-grow: 1;
+	flex-direction: column;	
+gap: 8px;
 }
 @media (max-width:730px) and (min-width:424.98px) {
 .latest-news__description {
 		padding: 4px;
 }
 }
-.latest-news__inner-box {
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-flex-grow: 1;
-}
 .latest-news__info {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	gap: 16px;
-	margin-bottom: 8px;
 	color: #4D4D4D;
 	font-size: 14px;
 	line-height: 1.5;
@@ -311,6 +302,7 @@ height: 20px;
 	font-size: 18px;
 font-weight: 500;
 line-height: 1.5;
+margin-bottom: 20px;
 flex-grow: 1;
 }
 .latest-news__shot-description:hover {

@@ -264,11 +264,11 @@ text-transform: uppercase;
 	padding: 24px;
 	display: flex;
 	flex-direction: column;	
-gap: 8px;
+flex-grow: 1;
 }
 @media (max-width:730px) and (min-width:424.98px) {
 .latest-news__description {
-		padding: 4px;
+		padding: 4px;		
 }
 }
 .latest-news__info {
@@ -279,6 +279,7 @@ gap: 8px;
 	color: #4D4D4D;
 	font-size: 14px;
 	line-height: 1.5;
+	margin-bottom: 8px;
 }
 @media (max-width:730px) and (min-width:424.98px) {
 .latest-news__info {
@@ -286,15 +287,23 @@ gap: 8px;
 	font-size: 12px;
 }
 }
-.latest-news__info img {
-width: 20px;
-height: 20px;
-}
 .food, .by-admin, .coments {
 	display: flex;
 	justify-content: flex-start;
 	gap: 4px;
 	align-items: center;
+}
+.food {
+	background: url("../img/food.svg") left no-repeat;
+	padding-left: 24px;
+}
+.by-admin {
+	background: url("../img/admin.svg") left no-repeat;
+	padding-left: 24px;
+}
+.coments {
+	background: url("../img/coments.svg") left no-repeat;
+	padding-left: 24px;
 }
 
 .latest-news__shot-description {

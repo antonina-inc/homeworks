@@ -97,10 +97,7 @@ body {
 	flex: 0 1 80%;
 }
 }
-.card:hover {
-	border: 1px solid #2C742F;
-	box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
-}
+
 .card__img {
 	padding: 5px 5px 0 5px;
 	position: relative;
@@ -130,9 +127,6 @@ flex-direction: column;
 line-height: 1.5;
 color: #4D4D4D;
 }
-.card__name:hover {
-color: #2C742F;
-}
 
 .card__price {
 	font-size: 16px;
@@ -159,9 +153,7 @@ align-items: flex-start;
 	transition: all 0.3s ease;
 	background: #F2F2F2 url("../img/bag.svg")50% no-repeat;
 }
-.card__basket:hover {
-	background: #00B207 url("../img/bag.white.svg")50% no-repeat;
-}
+
 .card__basket:active {
 	background-color: #2C742F;
 }
@@ -182,10 +174,7 @@ width: 40px;
 	background: url("../img/heart.svg")50% no-repeat;
 	transition: all 0.3s ease;
 }
-.add:hover {
-	background: #00B207 url("../img/heart.white.svg")50% no-repeat;
 
-}
 .add:active {
 	background: url("../img/heart.green.svg")50% no-repeat;
 }
@@ -193,9 +182,7 @@ width: 40px;
 	background: url("../img/eye.svg")50% no-repeat;
 	transition: all 0.3s ease;
 }
-.quick-view:hover {
-	background:#00B207 url("../img/eye.white.svg")50% no-repeat;
-}
+
 .card__sale {
 background-color: #EA4B48;
 padding: 3px 8px;
@@ -220,10 +207,11 @@ position: absolute;
 }
 .latest-news__card {
 		flex: 0 1 calc(100% / 3 - ((24px * (3 - 1)) / 3));
+		border: 1px solid #C4C4C4;;
 		border-radius: 8px 8px 8px 8px;
 		display: flex;
 		flex-direction: column;		
-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+
 }
 @media (max-width:767.98px) {
 .latest-news__card {
@@ -318,12 +306,36 @@ line-height: 1.5;
 margin-bottom: 20px;
 flex-grow: 1;
 }
-.latest-news__shot-description:hover {
-	color: #2C742F;
-}
+
 .latest-news__link {
 	color: #00B207;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 1.2;
+}
+
+@media (any-hover: hover) {
+.card:hover {
+	border: 1px solid #2C742F;
+	box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+}
+.card__name:hover {
+color: #2C742F;
+}
+.card__basket:hover {
+	background: #00B207 url("../img/bag.white.svg")50% no-repeat;
+}
+.add:hover {
+	background: #00B207 url("../img/heart.white.svg")50% no-repeat;
+}
+.quick-view:hover {
+	background:#00B207 url("../img/eye.white.svg")50% no-repeat;
+}
+.latest-news__shot-description:hover {
+	color: #2C742F;
+}
+.latest-news__card:hover {
+ box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+ border: none;
+}
 }

@@ -145,6 +145,7 @@ color: #2C742F;
 .card__price span {
 	color: #999;
 	font-weight: 400;
+	text-decoration: line-through;
 }
 .card__rating {
 	display: flex;

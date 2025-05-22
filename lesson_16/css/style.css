@@ -26,7 +26,6 @@ body {
 	padding-right: 15px;
 }
 
-/* ----------------------- */
 .header {
 	position: sticky;
 	top: 0;
@@ -61,20 +60,11 @@ margin-right: 20px;
 	flex-shrink: 0;
 }
 .logo-header__text {
-	/* display: inline-block; */
 font-size: 18px;
 font-weight: 700;
 text-transform: uppercase;
 }
-.header__menu {
-}
-.menu {
-	
-}
-/* обгортка */
-.menu__body {
-}
-/* ul menu */
+
 .menu__list {
 			display: flex;
 			flex-wrap: wrap;
@@ -84,7 +74,7 @@ text-transform: uppercase;
 	row-gap: 8px;
 	text-transform: uppercase;
 }
-/* li menu */
+
 .menu__item {
 	position: relative;
 	display: flex;
@@ -96,27 +86,7 @@ text-transform: uppercase;
 .menu__link {
 	
 }
-.sub-menu {
-	position: absolute;
-	top: 100%;
-	left: 0;	
-	opacity: 0;
-	visibility: hidden;
-	text-transform: lowercase;
-	background-color: #EBD9CF;
-	padding: 5px;
-	width: 100%;
-	text-align: center;
-}
-/* .menu__item.active .sub-menu {
-	opacity: 1;
-	visibility: visible;
-} */
-.sub-menu__item {
-	
-}
-.sub-menu__link {
-}
+
 .header__button {
 	background:#F26522;
 	padding: 8px 30px;
@@ -139,9 +109,17 @@ text-transform: uppercase;
 	display: none;
 }
 @media (any-hover: hover) {
-.menu__item:hover .sub-menu {
-		opacity: 1;
-	visibility: visible;
+.menu__item::after {
+	content: "";
+	position: absolute;
+	top: 110%;
+	height: 1px;
+	width: 0;
+	background-color: #000;
+	transition: all 0.3s;
+}
+.menu__item:hover::after {
+	width: 100%;
 }
 }
 @media (max-width:767.98px){
@@ -240,15 +218,6 @@ background-color: #b1adab;
 	gap: 20px;
 	justify-content: space-around;
 font-size: 20px;
-}
-.sub-menu {
-	position: relative;
-	top: 0;
-	width: 100%;
-	flex-grow: 1;
-	opacity: 1;
-	visibility: visible;
-	display: none;
 }
 }
 

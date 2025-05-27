@@ -130,7 +130,7 @@ transition: all 0.3s;
 	height: 14px;
 }
 
-@media (any-hover:hever), (pointer: fine) {
+@media (any-hover:haver), (pointer: fine) {
 	.card-catalog__img:hover {
 	transform: scale(1.02);
 }

@@ -104,26 +104,23 @@ body {
 }
 
 .catalog__link {
-	width: 206px;
-	max-height: 63px;
-	padding: 10px;
-	border: 1px solid #DBCCBA;
-	transition: all 0.3s;
-}
-.catalog__link a {
+	max-width: 196px;
+	max-height: 43px;
 	background-color: #DBCCBA;	
 font-size: 17px;
 line-height: 1.37;
 display: block;
-width: 100%;
 padding: 9px 30px;
 display: flex;
 justify-content: space-between;
 column-gap: 10px;
 align-items: center;
 transition: all 0.3s;
+outline: 1px solid #DBCCBA;
+outline-offset: 10px;
+margin-left: 11px;
 }
-.catalog__link a::after {
+.catalog__link::after {
 	content: "";
 	background: url("../img/icons/right-arrow.svg") 50% no-repeat;
 	width: 23px;
@@ -137,11 +134,11 @@ transition: all 0.3s;
 	.card-catalog__shopping img:hover {
 	transform: scale(1.1);
 }
-	.catalog__link:hover a {
+	.catalog__link:hover {
 	background-color:  #deb98d;	
 }
 .catalog__link:hover {
-		border: 1px solid #deb98d;
+		outline: 1px solid #deb98d;
 }
 }
 @media (max-width:920px) {

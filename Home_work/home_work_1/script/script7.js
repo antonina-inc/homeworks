@@ -1,14 +1,14 @@
 			//вводимо необхідні дані 	
-			// Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера
-			// дня (від 0 до 6).
+						
+			let monthNumber = 1 + Math.floor(Math.random() * 12)		
+			let dayNumber = Math.floor(Math.random() * 6)	
 			
-			const monthNumber = parseFloat(prompt('Введіть номер місяця (від 0 до 12)'))
-			const dayNumber = parseFloat(prompt('Введіть номер дня (від 0 до 6)')	)		
 			
 			//знаходимо результат
-			const sumDayMomth = monthNumber + dayNumber
+			let sumDayMomth = monthNumber + dayNumber
 					
 			//виводимо результат
-			document.write(`<p> Cума випадкового номера місяця та випадкового номера
-			дня становить ${sumDayMomth} </p>`) 
-			
+			document.write(`<p> Cума випадкового номера місяця (${monthNumber}) та випадкового номера
+			дня (${dayNumber}) становить ${sumDayMomth} </p>`) 
+
+// 		

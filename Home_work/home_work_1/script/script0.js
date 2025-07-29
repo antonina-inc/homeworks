@@ -4,7 +4,7 @@
 			const c = parseFloat(prompt('Введіть число', 'c='))
 			//знаходимо результат
 			const s1 = a + 12 + b
-			const s2 = ((a+b)/2*a)**(1/2)	
+			const s2 = ((a+b)/(2*a))**(1/2)	
 			const s3 = ((a+b)*c)**(1/3)
 			const s4 = Math.sin(a/(-b))
 			//виводимо результат

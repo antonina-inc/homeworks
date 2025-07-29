@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>Задача №5</h2>
+		<p>З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий
+			автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного
+			засобу, яким він може керувати</p>
+		<script>
+			const categoryDriver = prompt('Введіть категорію транспортного засобу (A, B, C)')
+			let userCategoryDriver
+	switch (categoryDriver) {
+		case 'A': userCategoryDriver = 'Водій має право керувати мотоциклами, мопедами, скутерами та іншими двоколісними транспортними засобами з об\'ємом двигуна понад 50 кубічних сантиметрів або потужністю електродвигуна від 4 кВт'
+			break;
+		case 'B': userCategoryDriver = 'Водій має право керувати легковими автомобілями, а також невеликими вантажівками та мікроавтобусами, загальна маса яких не перевищує 3,5 тонни, і кількість пасажирських місць (не рахуючи водія) не більше 8'
+			break;
+		case 'C': userCategoryDriver = 'Водій має право керувати вантажними автомобілями, дозволена максимальна маса яких перевищує 7,5 тонн'
+			break;	
+		default: userCategoryDriver = 'Нeкоректно введені дані'
+			break;
+	}
+	document.write (userCategoryDriver)
+	</script>
+		<br>
+		<a href="./home_work_3.html">Home</a>
+	</body>
+</html>

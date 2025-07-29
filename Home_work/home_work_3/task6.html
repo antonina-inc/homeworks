@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>Задача №6</h2>
+		<p>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.</p>
+		<script>
+			const dayOfWeek = prompt('Введіть номер дня тижня')
+	let userdayOfWeek
+	switch (dayOfWeek) {
+		case '1': userdayOfWeek = 'Понеділок'
+			break;
+		case '2': userdayOfWeek = 'Вівторок'
+			break;
+		case '3': userdayOfWeek = 'Середа'
+			break;	
+		case '4': userdayOfWeek = 'Четвер'
+			break;
+		case '5': userdayOfWeek = 'П\'ятниця'
+			break;
+		case '6': userdayOfWeek = 'Субота'
+			break;
+		case '7': userdayOfWeek = 'Неділя'
+			break;
+		default: userdayOfWeek = 'Нeкоректно введені дані'
+			break;
+	}
+	document.write (userdayOfWeek)
+	</script>
+		<br>
+		<a href="./home_work_3.html">Home</a>
+	</body>
+</html>

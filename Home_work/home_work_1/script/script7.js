@@ -1,7 +1,7 @@
 			//вводимо необхідні дані 	
 						
 			let monthNumber = 1 + Math.floor(Math.random() * 12)		
-			let dayNumber = Math.floor(Math.random() * 6)	
+			let dayNumber = Math.floor(Math.random() * 7)	
 			
 			
 			//знаходимо результат

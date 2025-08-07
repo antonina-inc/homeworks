@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>Задача №4</h2>
+		<p> Користувача поступово вводить показники температури протягом року. Знайти
+			середню температуру.</p>
+		<script>
+let tempMonth = 0 
+let averageTempMonth
+let averageTempYear
+let tempYear = 0
+
+for (let monthIndex = 1; monthIndex <= 12; monthIndex++) {
+	for (let dayIndex = 0; dayIndex < 2; dayIndex++) {
+	let tempDay = parseFloat(prompt(`Введіть температуру повітря за ${monthIndex} місяць`))
+	tempMonth += tempDay	
+		}
+	averageTempMonth = tempMonth / 2	
+}
+tempYear += averageTempMonth
+averageTempYear = (tempYear / 12).toFixed(1)
+ alert(`Середня температура за рік становить ${averageTempYear} градусів Цельсія`)	
+			
+	</script>
+		<br>
+		<a href="./home_work_5.html">Home</a>
+	</body>
+</html>

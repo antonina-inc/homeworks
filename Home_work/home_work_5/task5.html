@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>Задача №5</h2>
+		<p> Каса. Користувачу повідомляють суму, яку йому треба сплатити. Користувач
+			поступово вводить суму грошей до тих пір, поки суми не буде достатньо для
+			оплати товарів (кожного разу користувачу повідомляють, яку ще суму потрібно
+			ввести)</p>
+		<script>
+			let requiredAmount = 1+ Math.floor(Math.random()*1000)
+			alert(`Обраний товар коштує ${requiredAmount} грн`)
+			while (requiredAmount>0) {
+				const payment = parseInt(prompt(`Для оплати товару необхідно внести ${requiredAmount} грн`))
+				if (payment<=requiredAmount) 
+					requiredAmount -= payment			
+			}
+
+			
+	</script>
+		<br>
+		<a href="./home_work_5.html">Home</a>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>Задача №1</h2>
+		<p> Вивести таблицю</p>
+		<script>
+		let num = 1
+       document.write('<table>')
+            for (let row = 0; row < 3; row++) {
+               document.write('<tr>')
+                for (let column = 1; column <= 3; column++,num++) {
+                    document.write(`<td>${num}</td>`)					
+                }
+                  document.write('</tr>')
+            }
+        document.write('</table>')
+	</script>
+		<br>
+		<a href="./home_work_5.html">Home</a>
+	</body>
+</html>

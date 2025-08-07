@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>Задача №3</h2>
+		<p> Морський бій. Комп’ютер випадково розташовує одиночний корабель на полі
+			розміром N*M. Маючи К снарядів користувач намагається потопити корабель. </p>
+		<script>
+		const N = 1+ Math.floor(Math.random()*10)
+		const M = 1+ Math.floor(Math.random()*10)
+		const numAttemp = 1+ Math.floor(Math.random()*5)
+		alert(`Ви маєте ${numAttemp} спроб, щоб потопити корабель`)
+		for (let i = 0; i < numAttemp; i++) {
+			let fireN = prompt('введіть координати N', '3')
+    		let fireM = prompt('введіть координати M', '3')
+	 		if	(N == fireN && M == fireM){
+		 	alert('влучання')
+		 	break
+			}	
+			else 	alert('Промазав(((')
+		} 
+	</script>
+		<br>
+		<a href="./home_work_5.html">Home</a>
+	</body>
+</html>

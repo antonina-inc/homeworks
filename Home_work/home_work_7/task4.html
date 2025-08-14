@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №4</h2>
+
+	<script>
+		if (confirm('Почати тестування?')) {
+			let number1 = parseInt(prompt('Bведіть перше число', 5))
+			let number2 = parseInt(prompt('Bведіть друге число', 5))
+			let number3 = parseInt(prompt('Bведіть третє число', 5))
+
+			function getEvenNumber(num1, num2, num3) {
+				let evenNumber = 0
+				if (num1 % 2 === 0) evenNumber++
+				if (num2 % 2 === 0) evenNumber++
+				if (num3 % 2 === 0) evenNumber++
+				return evenNumber
+			}
+			function getPositiveNumber(num1, num2, num3) {
+				let positiveNumber = 0
+				if (num1 > 0) positiveNumber++
+				if (num2 > 0) positiveNumber++
+				if (num3 > 0) positiveNumber++
+				return positiveNumber
+			}
+			function greaterThan100(num1, num2, num3) {
+				let greaterThan100 = 0
+				if (num1 > 100) greaterThan100++
+				if (num2 > 100) greaterThan100++
+				if (num3 > 100) greaterThan100++
+				return greaterThan100
+			}
+			function getResult(num1, num2, num3) {
+				document.write(`Дано числа: ${number1}, ${number2}, ${number3}, з них: <br>`)
+				document.write(`${getEvenNumber(number1, number2, number3)} є парними <br>`)
+				document.write(`${getPositiveNumber(number1, number2, number3)} є додатніми <br>`)
+				document.write(`${greaterThan100(number1, number2, number3)} є більшими за 100`)
+			}
+			getResult(number1, number2, number3)
+
+
+		}
+	</script>
+	<br>
+	<a href="./home_work_7.html">Home</a>
+</body>
+
+</html>

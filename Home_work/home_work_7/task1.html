@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №1</h2>
+
+	<script>
+		if (confirm('Почати тестування?')) {
+			const numA = parseInt(prompt('Bведіть значення "А"', 5))
+			const numB = parseInt(prompt('Bведіть значення "B"', 8))
+			const numC = parseInt(prompt('Bведіть значення "C"', 6))
+			const numD = parseInt(prompt('Bведіть значення "D"', 4))
+			function getSum(a, b, c, d) {
+				return a + b + c + d
+			}
+			let userSum = getSum(numA, numB, numC, numD)
+			document.write(`${numA}+${numB}+${numC}+${numD} = ${userSum}<br>`)
+
+			function getMultiply(a, b, c, d) {
+				return a * b * c * d
+			} let userMultiplication = getMultiply(numA, numB, numC, numD)
+			document.write(`${numA}*${numB}*${numC}*${numD} = ${userMultiplication}<br>`)
+
+			function arithmeticMean(a, b, c, d) {
+				return (a + b + c + d) / 4
+			}
+			let userArithmeticMean = arithmeticMean(numA, numB, numC, numD)
+			document.write(`Середнє арифметичне від ${numA},${numB},${numC},${numD}
+			= ${userArithmeticMean}<br>`)
+
+			function minValue(a, b, c, d) {
+				let min = a
+				if (b < min) min = b
+				if (c < min) min = c
+				if (d < min) min = d
+				return min
+			}
+			let userMinNum = minValue(numA, numB, numC, numD)
+			document.write(`Мінімальним значенням  ${numA},${numB},${numC},${numD} 
+			є ${userMinNum}`)
+
+		}
+	</script>
+	<br>
+	<a href="./home_work_7.html">Home</a>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №3</h2>
+
+	<script>
+		if (confirm('Почати тестування?')) {
+			function getSeasonChoice(month) {
+				let res
+				switch (month) {
+					case 12:
+					case 1:
+					case 2: res = 'Зима'
+						break
+					case 3:
+					case 4:
+					case 5: res = 'Весна'
+						break
+					case 6:
+					case 7:
+					case 8: res = 'Літо'
+						break
+					case 9:
+					case 10:
+					case 11: res = 'Осінь'
+						break
+					default: res = 'Error'
+				}
+				return res
+			}
+			const enterMonth = parseFloat(prompt('Введіть номер місяця'))
+			const userMonth = getSeasonChoice(enterMonth)
+			document.write(`зараз ${userMonth}`)
+
+		}
+	</script>
+	<br>
+	<a href="./home_work_7.html">Home</a>
+</body>
+
+</html>

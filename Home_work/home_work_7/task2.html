@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №2</h2>
+
+	<script>
+		if (confirm('Почати тестування?')) {
+			function cmToInch(x) {
+				return x * 0.3937
+			}
+			let cmUserData = parseInt(prompt(`Введіть необхідну кількість сантиметрів`, 15))
+			let cmRes = cmToInch(cmUserData)
+			document.write(`${cmUserData} см - це ${cmRes} дюймів <br>`)
+
+			function kgTopound(y) {
+				return y * 2.2046
+			}
+			let kgUserData = parseInt(prompt(`Введіть необхідну кількість кілограмів`, 15))
+			let kgRes = kgTopound(kgUserData)
+			document.write(`${kgUserData} кг - це ${kgRes} фунтів <br>`)
+
+			function kmToMile(f) {
+				return f * 0, 62137
+			}
+			let kmUserData = parseInt(prompt(`Введіть необхідну кількість кілометрів`, 15))
+			let kmRes = kmToMile(kmUserData)
+			document.write(`${kmUserData} км - це ${kmRes} миль`)
+		}
+	</script>
+	<br>
+	<a href="./home_work_7.html">Home</a>
+</body>
+
+</html>

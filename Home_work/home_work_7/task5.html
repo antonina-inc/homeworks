@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №5</h2>
+
+	<script>
+		if (confirm('Почати тестування?')) {
+			numberRow = parseInt(prompt('Ведіть кількість рядків', 5))
+			numberColumn = parseInt(prompt('Ведіть кількість колонок', 5))
+			userText = prompt('Ведіть текст', 'text')
+			function createTable(row, column, text) {
+				document.write('<table>')
+				for (let r = 0; r < row; r++) {
+					document.write('<tr>')
+					for (let c = 1; c <= column; c++) {
+						document.write(`<td>${text}</td>`)
+					}
+					document.write('</tr>')
+				}
+				document.write('</table>')
+			}
+			createTable(numberRow, numberColumn, userText)
+		}
+	</script>
+	<br>
+	<a href="./home_work_7.html">Home</a>
+</body>
+
+</html>

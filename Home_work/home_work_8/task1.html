@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №1</h2>
+
+	<script>
+		if (confirm('Почати тестування?')) {
+			function getAverageScore(evaluations) {
+				let sumEvaluations = 0
+				for (let i = 0; i < evaluations.length; i++) {
+					sumEvaluations += evaluations[i]
+				}
+				return sumEvaluations / evaluations.length
+			}
+			function getProgressStudent(arr) {
+				let min = arr[0]
+				for (let i = 1; i < arr.length; i++) {
+					if (arr[i] < min) min = arr[i]
+				}
+				if (min === 2) document.write('Двійочник')
+				else if (min === 3) document.write('Трійочник')
+				else if (min === 4 || 5) document.write('Хорошист')
+			}
+			let averageScore = [3, 4, 4, 5]
+			const userAverageScore = getAverageScore(averageScore)
+			const userprogressStudent = getProgressStudent(averageScore)
+			document.write(`<br>Середній бал учня - ${userAverageScore.toFixed(1)}`);
+		}		
+	</script>
+	<br>
+	<a href="./home_work_8.html">Home</a>
+</body>
+
+</html>

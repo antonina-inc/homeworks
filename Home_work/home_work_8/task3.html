@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №3</h2>
+
+	<script>
+		if (confirm('Почати тестування?')) {
+			function nameVerify(nameList) {
+				let count = 0
+				let name
+				for (let i = 0; i < nameList; i++) {
+					name = prompt('Iм\'я', 'Ivan')
+					if (name === 'Ivan') count++
+				}
+				return count
+			}
+			let names = nameVerify(3)
+			document.write(`Ім'я 'Ivan' зустрічається ${names} разів`)
+		}		
+	</script>
+	<br>
+	<a href="./home_work_8.html">Home</a>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №5</h2>
+
+	<script>
+		if (confirm('Почати тестування?')) {
+			function getSumYear(arr) {
+				let sum = 0
+				for (let i = 0; i < arr.length; i++) {
+					sum += arr[i]
+				}
+				return sum
+			}
+			function getFirstHalfYear(arr) {
+				let sum = 0
+				for (let i = 0; i < 6; i++) {
+					sum += arr[i]
+				}
+				return sum
+			}
+			function getSecondHalfYear(arr) {
+				let sum = 0
+				for (let i = 6; i <= arr.length - 1; i++) {
+					sum += arr[i]
+				}
+				return sum
+			}
+			function getSumSummer(arr) {
+				let sum = 0
+				for (let i = 5; i < 8; i++) {
+					sum += arr[i]
+				}
+				return sum
+			}
+			function getSumEvenMonth(arr) {
+				let sum = 0
+				for (let i = 0; i < arr.length; i++) {
+					if (i % 2 !== 0)
+						sum += arr[i]
+				}
+				return sum
+			}
+			function getSumStartSeason(arr) {
+				return arr[2] + arr[5] + arr[8] + arr[11]
+			}
+
+			const payments = [259, 6597, 2584, 2365, 986, 5487, 3651, 2598, 6325, 9654, 5214, 1235]
+
+			const sumYear = getSumYear(payments)
+			document.write(`сума за рік складає - ${sumYear} грн <br>`)
+			const sumFirstHalYear = getFirstHalfYear(payments)
+			document.write(`сума за перше півріччя складає - ${sumFirstHalYear} грн <br>`)
+			const sumSecondtHalYear = getSecondHalfYear(payments)
+			document.write(`сума за друге півріччя складає - ${sumSecondtHalYear} грн <br>`)
+			const sumSummer = getSumSummer(payments)
+			document.write(`сума за літо складає - ${sumSummer} грн <br>`)
+			const sumEvenMonth = getSumEvenMonth(payments)
+			document.write(`сума за парні місяці складає - ${sumEvenMonth} грн <br>`)
+			const sumStartSeason = getSumStartSeason(payments)
+			document.write(`сума за перші місяці сезону - ${sumStartSeason} грн <br>`)
+		}		
+	</script>
+	<br>
+	<a href="./home_work_8.html">Home</a>
+</body>
+
+</html>

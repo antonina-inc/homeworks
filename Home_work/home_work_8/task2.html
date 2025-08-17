@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №2</h2>
+
+	<script>
+		if (confirm('Почати тестування?')) {
+			function getnumberLess20(arr) {
+				let numberLess20 = 0
+				for (let i = 0; i < arr.length; i++) {
+					if (arr[i] < 20) numberLess20++
+				}
+				return numberLess20
+			}
+			function getnumberOnWeekends(arr) {
+				return arr[5] + arr[6]
+			}
+			function getnumberOnWorkingDay(arr) {
+				let numberOnWorkingDay = 0
+				for (let i = 0; i < 5; i++) {
+					numberOnWorkingDay += arr[i]
+				}
+				return numberOnWorkingDay
+			}
+			function getVisitMim(arr) {
+				let min = Math.min(...arr)
+				let minDay
+				for (let i = 1; i < arr.length; i++) {
+					if (min === arr[i]) minDay = i + 1
+				}
+				return minDay
+			}
+			function getVisitMax(arr) {
+				let max = Math.max(...arr)
+				let maxDay
+				for (let i = 1; i < arr.length; i++) {
+					if (max === arr[i]) maxDay = i + 1
+				}
+				return maxDay
+			}
+
+
+			const firstWeek = [25, 20, 54, 15, 81, 32, 12]
+			const less20 = getnumberLess20(firstWeek)
+			const onWeekends = getnumberOnWeekends(firstWeek)
+			const onWorkingDay = getnumberOnWorkingDay(firstWeek)
+			const minVisit = getVisitMim(firstWeek)
+			const maxVisit = getVisitMax(firstWeek)
+			document.write(`Кількість відвідувачів магазину за перший тиждень:<br>
+		в понеділок - ${firstWeek[0]}<br>
+		у вівторок - ${firstWeek[1]}<br>
+		в середу - ${firstWeek[2]}<br>
+		в четвер - ${firstWeek[3]}<br>
+		у п'ятницю - ${firstWeek[4]}<br>
+		в суботу - ${firstWeek[5]}<br>
+		у неділю - ${firstWeek[6]}<br>`)
+			document.write(`${less20} днів - Кількість відвідувачів була меншою 20 <br>`)
+			document.write(`На ${minVisit} день - Кількість відвідувачів була мінімальною <br>`)
+			document.write(`На ${maxVisit} день - Кількість відвідувачів була максимальною <br>`)
+			document.write(`${onWorkingDay} відвідувачів було у буднідні <br>`)
+			document.write(`${onWeekends} відвідувачів було у вихідні дні <br>`)
+		}		
+	</script>
+	<br>
+	<a href="./home_work_8.html">Home</a>
+</body>
+
+</html>

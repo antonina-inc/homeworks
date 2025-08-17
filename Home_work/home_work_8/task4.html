@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №4</h2>
+
+	<script>
+		if (confirm('Почати тестування?')) {
+			function getFirstA(carNumbers) {
+				let count = 0
+				for (let i = 0; i < carNumbers.length; i++) {
+					if (numbers[i][0] === 'A') count++
+				}
+				return count
+			}
+			function verifyFirstAndLetest(carNumbers) {
+				let count = 0
+				for (let i = 0; i < carNumbers.length; i++) {
+					if (numbers[i][0] === numbers[i][numbers[i].length - 1]) count++
+				}
+				return count
+			}
+			function getMore5(carNumbers) {
+				let count = 0
+				let letestSumbol
+				for (let i = 0; i < carNumbers.length; i++) {
+					if (numbers[i].length > 5) count++
+				}
+				return count
+			}
+
+			const numbers = ['AF2548', 'HK24H', 'HR2587', 'AO9632A', 'FR548GP']
+			const a = getFirstA(numbers)
+			document.write(`Кількість номерів, які починаютьсяна "A" - ${a} <br>`)
+
+			const b = verifyFirstAndLetest(numbers)
+			document.write(`Кількість номерів, в яких перша і остання літера співпадають - ${b} <br>`)
+
+			const c = getMore5(numbers)
+			document.write(`Кількість номерів, які складаються з більше як з 5 символів - ${c} <br>`)
+		}		
+	</script>
+	<br>
+	<a href="./home_work_8.html">Home</a>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №5</h2>
+
+	<script>
+		if (confirm('Почати тестування?')) {
+			let arr = [125, 80, 6, -563, 95, 123]
+			let product = 1
+			arr.forEach((number) => {
+				if (number > 0) product *= number
+			}
+			)
+			document.write(`В масиві ${arr} добуток усіх додатніх чисел - ${product}`);
+		}	
+	</script>
+	<br>
+	<a href="./home_work_9.html">Home</a>
+</body>
+
+</html>

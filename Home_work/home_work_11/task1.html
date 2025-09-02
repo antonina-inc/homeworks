@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №1</h2>
+	<p>Знайти суми елементів у вказаній області (зафарбована область охоплює відповідну половину рядків і стовпців)
+	</p>
+	<script>
+		if (confirm('Почати тестування?')) {
+			const getRandomRow = (elNumber, min, max) =>
+				Array.from(
+					{ length: elNumber },
+					() => min + Math.floor(Math.random() * (max - min + 1))
+				)
+
+			const getRandTable = (rowCount, colCount, min, max) =>
+				Array.from(
+					{ length: rowCount }, () => getRandomRow(colCount, min, max))
+
+			const arr = getRandTable(3, 4, 2, 10)
+			console.log(arr)
+
+			//1. номери рядків від 0 до половини, стовпці від 0 до половини
+			// let sum = 0
+			// const halfRow = Math.floor(arr.length / 2)
+			// for (let rowIndex = 0; rowIndex < halfRow; rowIndex++) {
+			// 	let halfCol = Math.floor(arr[rowIndex].length / 2)
+			// 	for (let colIndex = 0; colIndex < halfCol; colIndex++) {
+			// 		sum += arr[rowIndex][colIndex]
+			// 	}
+			// }
+			// document.write(sum)
+			///////////////////////////////////////////////////////
+			//2 номери рядків від 0 до половини, стовпці від половини до кінця
+			// let sum = 0
+			// const halfRow = Math.floor(arr.length / 2)
+			// for (let rowIndex = 0; rowIndex < halfRow; rowIndex++) {
+			// 	let halfCol = Math.floor(arr[rowIndex].length / 2)
+			// 	for (let colIndex = halfCol; colIndex < arr[rowIndex].length; colIndex++) {
+			// 		sum += arr[rowIndex][colIndex]
+			// 	}
+			// }
+			// document.write(sum)
+			///////////////////////////////////////////////
+			//3 номери рядків (від половини до кінця, стовпці від 0 до половини
+			// let sum = 0
+			// const halfRow = Math.floor(arr.length / 2)
+			// for (let rowIndex = halfRow; rowIndex < arr.length; rowIndex++) {
+			// 	let halfCol = Math.floor(arr[rowIndex].length / 2)
+			// 	for (let colIndex = 0; colIndex < halfCol; colIndex++) {
+			// 		sum += arr[rowIndex][colIndex]
+			// 	}
+			// }
+			// document.write(sum)
+			//////////////////////////
+			//4 номери рядків від половини до кінця , стовпці від половини до кінця
+			// let sum = 0
+			// const halfRow = Math.floor(arr.length / 2)
+			// for (let rowIndex = halfRow; rowIndex < arr.length; rowIndex++) {
+			// 	let halfCol = Math.floor(arr[rowIndex].length / 2)
+			// 	for (let colIndex = halfCol; colIndex < arr[rowIndex].length; colIndex++) {
+			// 		sum += arr[rowIndex][colIndex]
+			// 	}
+			// }
+			// document.write(sum)
+			///////////////////////////
+			//5 Суму парних рядків
+			// let sumEvenRow = 0
+			// for (let indexRow = 0; indexRow < arr.length; indexRow++) {
+			// 	for (const num of arr[indexRow]) {
+			// 		if (indexRow % 2 === 0)
+			// 			sumEvenRow += num
+			// 	}
+			// }
+			// document.write(sumEvenRow)
+			///////////////////////////////
+			//6 Суму непарних стовпців
+			// let sumOddColumn = 0
+			// for (const row of arr) {
+			// 	for (let indexColumn = 0; indexColumn < row.length; indexColumn += 2) {
+			// 		sumOddColumn += row[indexColumn]
+			// 	}
+			// }
+			// document.write(sumOddColumn)
+			////////////////////////////
+			//7 У парних рядках – непарні стовпці, у непарних – парні.
+			// let sumColumnOdd = 0
+			// let sumColumnEven = 0
+
+			// for (let indexRow = 0; indexRow < arr.length; indexRow++) {
+			// 	if (indexRow % 2 === 0) {
+			// 		for (let indexCol = 0; indexCol < arr[indexRow].length; indexCol += 2) {
+			// 			sumColumnOdd += arr[indexRow][indexCol]
+			// 		}
+			// 	}
+			// 	else
+			// 		for (let indexCol = 1; indexCol < arr[indexRow].length; indexCol += 2) {
+			// 			sumColumnEven += arr[indexRow][indexCol]
+			// 		}
+			// }
+			// document.write(`${sumColumnOdd}<br>`)
+			// document.write(sumColumnEven)
+		}
+
+	</script>
+	<br>
+	<a href="./home_work_11.html">Home</a>
+</body>
+
+</html>

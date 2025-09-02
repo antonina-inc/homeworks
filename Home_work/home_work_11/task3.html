@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача №3</h2>
+	<p>Морський бій. Випадковим чином на двовимірному полі розміром 6*6 розташовується 5 кораблів. Користувач стріляє
+		вказуючи координати. Гра продовжується поки не потоплено усі кораблі або у користувача не закінчаться снаряди.
+
+	</p>
+	<script>
+		if (confirm('Почати тестування?')) {
+
+			let gameField = Array.from({ length: 6 }, () => Array(6).fill(0));
+
+			let ships = 0
+			while (ships < 5) {
+				let randomRow = Math.floor(Math.random() * 6)
+				let randomCol = Math.floor(Math.random() * 6)
+				if (gameField[randomRow][randomCol] === 0) {
+					gameField[randomRow][randomCol] = 1
+					ships++
+				}
+			}
+			console.log(gameField);
+
+			let numberShots = parseInt(prompt('Оберіть кількість пострілів', 10))
+
+			for (let i = 0; i < numberShots; i++) {
+				let userShortRow = parseInt(prompt('ВВедіть координату по вертикалі'))
+				let userShortCol = parseInt(prompt('ВВедіть координату по діагоналі'))
+				if (gameField[userShortRow][userShortCol] === 1) {
+
+					delete gameField[userShortRow][userShortCol]
+					ships--
+					alert(`влучання, залишилось ${ships} кораблів`)
+				}
+				else alert('мимо')
+			}
+			if (ships === numberShots) alert('Вітаю, ви потопили всі русняві кораблі')
+			else alert('Нажаль((((, не всі постріли були влучними')
+
+		}
+	</script>
+	<br>
+	<a href="./home_work_11.html">Home</a>
+</body>
+
+</html>

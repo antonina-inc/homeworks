@@ -1,0 +1,29 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(182, 180, 180);
+}
+.container{
+	padding: 20px;
+}
+h1{
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.title p{
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.converter {
+	display: inline-flex;
+	flex-direction: column;
+	gap: 10px;
+}
+button{
+	padding: 5px;
+	background-color: rgb(131, 160, 131);
+	border-radius: 4px;
+	cursor: pointer;
+}

@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  background-color: rgb(182, 180, 180);
+}
+
+h1,h2 {
+    text-align: center;
+}
+.test {
+ 
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+button {
+   cursor: pointer;
+  	padding: 5px;
+	background-color: rgb(131, 160, 131);
+	border-radius: 4px;
+}
+.form-test,.form-test>div{
+        display: inline-flex;
+            gap: 10px;
+            flex-direction: column;
+}

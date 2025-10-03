@@ -39,8 +39,8 @@ if (confirm('Почати тестування?')) {
 			clearInterval(this.interval)
 			this.tanks.src = this.imagesObg.hit
 			setTimeout(() => {
-				this.tanks.style.width = 600 + 'px';
-			}, 200);
+				this.tanks.style.width = 250 + 'px';
+			}, 100);
 			setTimeout(() => {
 				this.tanks.src = ''
 			}, 500);
@@ -74,6 +74,5 @@ if (confirm('Почати тестування?')) {
 		)
 		tank.render('body')
 	}
-
 
 }

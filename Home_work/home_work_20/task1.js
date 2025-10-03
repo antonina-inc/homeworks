@@ -36,8 +36,8 @@ if (confirm('Почати тестування?')) {
 		}
 
 		onTap() {
-			clearInterval(this.interval)//коли клікнули, зупиняємо інтервал
-			this.tanks.src = this.imagesObg.hit//міняємо картинку
+			clearInterval(this.interval)
+			this.tanks.src = this.imagesObg.hit
 			setTimeout(() => {
 				this.tanks.style.width = 600 + 'px';
 			}, 200);
@@ -74,5 +74,6 @@ if (confirm('Почати тестування?')) {
 		)
 		tank.render('body')
 	}
+
 
 }

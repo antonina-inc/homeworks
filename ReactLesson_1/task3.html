@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+	<div id="root"></div>
+	<!-- Задача 4. “Рахунок у банку”
+Вимоги:
+1) Спочатку сума дорівнює 0грн. Змінити суму у гривнях можна або зарахуванням на рахунок, або зняттям.
+2) Сума автоматично переводиться у долари та євро (фіксований курс задається у data).
+3) можливість зарахувати суму (контролювати, щоб не була від’ємною)
+4) можливість зняти (щоб не можна зняти більше ніж є на рахунку)
+5) при виконанні зняття і зарахування коштів вираховувати 3% від суми (відображати кількість відсотків автоматично)
+
+При зміні суми :
+- якщо було зняття, то суму відображати червоним
+- якщо було зарахування, то суму відображати зеленим
+Якщо сума валюти менша за 100 то відображати червоним кольором, інакше - зеленим
+ -->
+
+	<script type="text/babel">
+		function BankAccount() {
+			const [amountOnAccount, setAmountOnAccount] = React.useState(0)
+			const [increase, setIncrease] = React.useState()
+			const [withdraw, setWithdraw] = React.useState()
+			const [textColor, setTextColor] = React.useState('black')
+			let percent = 0
+			if (increase) percent = increase * 0.03
+			if (withdraw) percent = withdraw * 0.03
+
+			function addMoney() {
+				setAmountOnAccount((prevSum) => increase > 0 ? prevSum + increase : prevSum)
+				setTextColor('green')
+				setIncrease('')
+
+			} function withdrawMoney() {
+				setAmountOnAccount((prevSum) => withdraw < prevSum ? prevSum - withdraw : prevSum)
+				setWithdraw('')
+				setTextColor('red')
+			}
+			const dolarRate = 42
+			const sumInDolars = amountOnAccount / dolarRate
+			const euroRate = 51
+			const sumInEuro = amountOnAccount / euroRate
+			return (
+				<div>
+					<div
+						style={{ color: textColor }}
+					>Сума на рахунку: {amountOnAccount} грн</div>
+					<label> Зарахувати на рахунок
+						<input
+							type="number"
+							value={increase}
+							onChange={(e) => setIncrease(Number(e.target.value))}
+						/>
+					</label>
+					<button onClick={addMoney}>Зарахувати</button>
+					<br />
+					<label> Зняти з рахунка
+						<input
+							type="number"
+							value={withdraw}
+							onChange={(e) => setWithdraw(Number(e.target.value))} />
+					</label>
+					<button onClick={withdrawMoney}>Зняти</button>
+					<p>Відсотки за обслуговування:{percent.toFixed(2)} грн </p>
+					<hr />
+					<p style={{ color: sumInDolars < 100 ? 'red' : 'black' }}>Сума в доларах: ${sumInDolars.toFixed(2)}</p>
+					<p style={{ color: sumInEuro < 100 ? 'red' : 'black' }}>Сума в євро: Є{sumInEuro.toFixed(2)}</p>
+				</div>)
+		}
+
+		function App() {
+			return (
+				<BankAccount />
+			)
+		}
+
+		const root = ReactDOM.createRoot(
+			document.getElementById('root')
+		)
+
+		root.render(<App />)
+	</script>
+</body>
+
+</html>

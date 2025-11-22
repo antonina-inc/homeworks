@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<style>
+	img {
+		width: 200px;
+	}
+</style>
+
+<body>
+	<div id="root"></div>
+
+	<script type="text/babel">
+
+
+		// Вводиться номер місяця. Автоматично виводити 
+		// рекомендований одяг (зима – пальто, літо – шорти ….). 
+		// Також автоматично виводити зображення з відповідним 
+		// зображенням лісу (зима – ліс зі снігом, осінь – жовтий ліс, …).
+		function Season() {
+			const [month, setMonth] = React.useState('')
+			let clothing = ''
+			let season = ''
+			let img = ''
+			if (month === 1 || month === 2 || month === 12) {
+				season = 'Зима', clothing = 'Зимова куртка', img = './images/winter-forest.jpg'
+			}
+			else if (month === 3 || month === 4 || month === 5) {
+				season = 'Весна', clothing = 'Світшот', img = './images/spring-forest.webp'
+			}
+			else if (month === 6 || month === 7 || month === 8) {
+				season = 'Літо', clothing = 'Футболка', img = './images/summer-forest.jpg'
+			}
+			else if (month === 9 || month === 10 || month === 11) {
+				season = 'Осінь', clothing = 'Пальто', img = './images/autumn-forest.jpg'
+			}
+
+
+			return (
+				<div>
+					<label> Номер місяця
+						<input
+							type="number"
+							value={month}
+							onChange={(e) => setMonth(Number(e.target.value))}
+						/>
+					</label>
+					<hr />
+					<div> {season} - {clothing}
+						<br />
+						<img src={img} />
+					</div>
+				</div>
+			)
+		}
+
+		function App() {
+			return (
+				<Season />
+			)
+		}
+
+		const root = ReactDOM.createRoot(
+			document.getElementById('root')
+		)
+
+		root.render(<App />)
+	</script>
+</body>
+
+</html>

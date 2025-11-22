@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+	<div id="root"></div>
+	<!-- Задача 3. Задано початок та кінець діапазону.
+	  При натисканні на кнопку випадковим чином генерувати значення з 
+	  вказаного діапазону та відображати його.
+ -->
+
+	<script type="text/babel">
+		function GenerateRandomNum() {
+			const [firstNum, setFirstNum] = React.useState()
+			const [secondNum, setSecondNum] = React.useState()
+			const [generatedNumber, setGeneratedNumber] = React.useState()
+			function getRandNum() {
+				const randNum = Math.floor(Math.random() * (secondNum - firstNum + 1)) + firstNum
+				setGeneratedNumber(randNum)
+			}
+			return (
+				<div>
+					<label> Вкажіть початкове значення
+						<input
+							type="number"
+							value={firstNum}
+							onChange={(e) => setFirstNum(Number(e.target.value))}
+						/>
+					</label>
+					<label> Вкажіть кінцеве значення
+						<input
+							type="number"
+							value={secondNum}
+							onChange={(e) => setSecondNum(Number(e.target.value))} />
+					</label>
+					<hr />
+					<button onClick={getRandNum}>Згенерувати число</button>
+					<div>Згенероване число - {generatedNumber}</div>
+				</div>)
+		}
+
+
+		function App() {
+			return (
+				<GenerateRandomNum />
+			)
+		}
+
+		const root = ReactDOM.createRoot(
+			document.getElementById('root')
+		)
+
+		root.render(<App />)
+	</script>
+</body>
+
+</html>
